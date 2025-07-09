@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <title>Регистрация</title>
+</head>
+
+<body>
+    <main>
+        <h2>Регистрация</h2>
+        <form action="src/registartion.php" method="post">
+            <label>Имя</label>
+            <input required type="text" placeholder="Иван Иванов" name="name">
+
+            <label>Логин</label>
+            <input required type="text" placeholder="Ivanovich" name="login">
+
+            <label>Телефон (10 цифр, без кода страны)</label>
+            <input required pattern="\d{10}" type="tel" placeholder="8005553535" name="phone">
+
+            <label>Почта</label>
+            <input required type="email" placeholder="IvanIvanov@mail.ru" name="email">
+
+            <label>Пароль</label>
+            <input required minlength="6" type="password" placeholder="Пароль" name="password">
+
+            <label>Подтвердите пароль</label>
+            <input required minlength="6" type="password" placeholder="Подтвердите пароль" name="passwordConfirm">
+
+            <a href="index.html">Назад</a>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+</body>
+
+</html>

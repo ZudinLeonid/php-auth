@@ -1,0 +1,7 @@
+/src/config.php
+
+.vscode/
+
+*.log
+*.tmp
+.DS_Store
